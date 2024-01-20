@@ -1,3 +1,36 @@
+/* CUSTOM-PROPS */
+:root{
+    --text-color:#69707D;
+    --text-color-dark:#1D2026;
+    --accent-color:#FF7E1B;
+    --accent-color-hover:#FFAB6A;
+    --accent-color-light:#FFEEE2;
+    --light-bg:#F6F8FD;
+
+    --font-family:"Kumbh Sans", Arial;
+}
+
+/* FONT FACE */
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Bold.woff2') format('woff2'),
+        url('../fonts/KumbhSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Regular.woff2') format('woff2'),
+        url('../fonts/KumbhSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 html{
     box-sizing:border-box;
     height: 100%;
@@ -16,11 +49,11 @@ body{
     height: 100%;
     padding:0;
     margin:0;
-    font-family:"Arial", sans-serif;
+    font-family:var(--font-family);
     font-size:16px;
-    line-height: 1.5;
+    line-height: 26px;
     background-color:#fff;
-    color:#222;
+    color:var(--text-color);
 }
 img{
     max-width: 100%;
@@ -30,9 +63,9 @@ img{
 /* CONTAINER */
 .container{
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 1148px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-right: auto;
     margin-left: auto;
 }
